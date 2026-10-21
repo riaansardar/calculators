@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <h1>Scientific Calculator</h1>
+    <p class="subtitle">Trigonometry, powers, roots and more</p>
+
+    <label class="sr-only" for="display">Calculator display</label>
+    <input id="display" class="display" type="text" inputmode="decimal"
+      placeholder="0" autocomplete="off" aria-label="Calculator display">
+    <div class="hint">Trigonometric functions use degrees.</div>
+
+    <div class="buttons">
+      <button class="utility" data-action="clear">C</button>
+      <button class="utility" data-action="delete">DEL</button>
+      <button data-value="(">(</button>
+      <button data-value=")">)</button>
+      <button class="operator" data-value="/">÷</button>
+
+      <button data-insert="sin(">sin</button>
+      <button data-insert="cos(">cos</button>
+      <button data-insert="tan(">tan</button>
+      <button class="operator" data-value="*">×</button>
+
+      <button data-insert="sqrt(">√</button>
+      <button data-insert="^2">x²</button>
+      <button data-insert="^">xʸ</button>
+      <button class="operator" data-value="-">−</button>
+
+      <button data-insert="log(">log</button>
+      <button data-insert="ln(">ln</button>
+      <button data-insert="!">n!</button>
+      <button class="operator" data-value="+">+</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-insert="pi">π</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-insert="e">e</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value=".">.</button>
+
+      <button data-value="0">0</button>
+      <button data-insert="Ans">Ans</button>
+      <button class="equals" data-action="calculate">=</button>
+      <button data-action="sign">±</button>
+    </div>
+    <p id="message" class="message" aria-live="polite"></p>
+  </main>
+</body>
+</html>
